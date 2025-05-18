@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Styled Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .table-wrapper {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #e5e7eb;  /* Added table border - Tailwind's border-gray-200 */
+        }
+
+        thead {
+            background: linear-gradient(to right, #6b7280, #374151);
+        }
+        thead th{
+             padding: 1rem;
+        }
+
+        th {
+            text-align: left;
+            font-weight: 600;
+            color: white;
+            padding: 0.75rem;
+            border-bottom: 1px solid #d1d5db; /* Added header border - Tailwind's border-gray-300 */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9fafb;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        td {
+            padding: 0.75rem;
+            color: #4b5563;
+            border-bottom: 1px solid #d1d5db; /* Added row border - Tailwind's border-gray-300 */
+        }
+
+        tbody tr:hover {
+            background-color: #eff6ff;
+            transition: background-color 0.3s ease;
+        }
+
+        .symbol-cell {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>123 Main St, Anytown, USA</td>
+                        <td>555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>456 Oak Ave, Somecity, USA</td>
+                        <td>555-5678</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Jones</td>
+                        <td>789 Pine Ln, Othertown, USA</td>
+                        <td>555-9012</td>
+                    </tr>
+                    <tr>
+                        <td>Mary Brown</td>
+                        <td>246 Elm St, Anytown, USA</td>
+                        <td>555-2345</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Davis</td>
+                        <td>1357 Oak Ave, Somecity, USA</td>
+                        <td>555-6789</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Wilson</td>
+                        <td>8642 Pine Ln, Othertown, USA</td>
+                        <td>555-0123</td>
+                    </tr>
+                      <tr>
+                        <td>David Garcia</td>
+                        <td>9753 Main St, Anytown, USA</td>
+                        <td>555-4321</td>
+                    </tr>
+                    <tr>
+                        <td>Linda Rodriguez</td>
+                        <td>8642 Oak Ave, Somecity, USA</td>
+                        <td>555-8765</td>
+                    </tr>
+                    <tr>
+                        <td>Christopher Williams</td>
+                        <td>2468 Pine Ln, Othertown, USA</td>
+                        <td>555-2109</td>
+                    </tr>
+                    <tr>
+                        <td>Angela Garcia</td>
+                        <td>1357 Elm St, Anytown, USA</td>
+                        <td>555-5432</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
