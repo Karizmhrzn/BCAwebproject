@@ -7,30 +7,41 @@
     <link rel="shortcut icon" href="../Images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
-</head>
-<body>
-    <nav><img src="../Images/logo.png" alt="">
-        <div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        
-        <ul>
+</head>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+<body>
+    <nav>
+    <div class="logo">
+        <img src="../Images/logo.png" alt="Hazy Logo">
+    </div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Service</a></li>
-        </ul>
-        </div>
-    </nav>
+        <li><a href="#">Keyboards</a></li>
+        <li><a href="#">Switches</a></li>
+    </ul>
+</nav>
     
 
     <Header class="banner"> 
-        <div>
-            <img src="../Images/banner.png" alt="">
+        <div class="banner-div">
+            <img src="../Images/bady-abbas-jOmBUCtflWA-unsplash.jpg" alt="Banner image">
             <div>
-                <h1>BCA 2nd SEM</h1>
+                <h1>The Art of Typing</h1>
                 <p>
-                    Talk less, code more !
+                    Find Your Perfect Match 
                 </p>
             </div>
         </div>
@@ -42,31 +53,47 @@
         <div class="Product-grid">
         <div class="Product-card">
             <img src="../Images/Tsumago-juku.jpg" alt="">
-            <h3>Demo content</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sed ut commodi itaque magni eius et omnis minima, eos tenetur corrupti praesentium! Laboriosam eveniet perspiciatis vel veniam quibusdam, odio enim.</p>
+            <h3>Heart of Sunbeams</h3>
+            <p>Bathed in golden komorebi (sunlight filtering through trees), a quiet moment unfolds within a traditional ryokan. The gentle smoke from the irori hearth curls upwards, warming the space and inviting contemplation, a timeless scene of tranquility in the heart of historic Japan.</p>
         </div>
         <div class="Product-card">
             <img src="../Images/03e57846-3b33-4e36-9e87-a0331d1012af.jpg" alt="">
-            <h3>Demo content</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sed ut commodi itaque magni eius et omnis minima, eos tenetur corrupti praesentium! Laboriosam eveniet perspiciatis vel veniam quibusdam, odio enim.</p>
+            <h3>Purple Dream</h3>
+            <p>A vibrant, stylized purple Porsche 993 RWB, a true automotive artisan's creation, captured in bold lines. It evokes the spirit of Japanese tuning culture, where passion for speed and unique aesthetics converge in a powerful and eye-catching dream machine.</p>
         </div> 
         <div class="Product-card">
             <img src="../Images/download.jpg" alt="">
-            <h3>Demo content</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sed ut commodi itaque magni eius et omnis minima, eos tenetur corrupti praesentium! Laboriosam eveniet perspiciatis vel veniam quibusdam, odio enim.</p>
+            <h3>Cherry Blossom Town</h3>
+            <p>L charming street scene bursts with the delicate beauty of cherry blossoms, painting the sky in soft pink hues. Below, a sleek pink car perfectly complements the vibrant Japanese cityscape, where everyday life hums beneath the blooming beauty, creating a uniquely charming and nostalgic atmosphere.</p>
         </div>
         </div>
         </section>
-        <section>
-            <h1> Virtual Tour</h1>
+        <section class="Virtual">
+            <h1>Thockiest Keyboard</h1>
             <div>
                 <iframe width="1000
                 " height="600" src="https://www.youtube.com/embed/4oVvoPAYkhU?si=AsWEeVLie-GB7vFy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-left">
+            <p>@2025 Hazy</p>
+        </div>
+        <div class="footer-center">
+            <img src="../Images/logo.ico" alt="logo">
+            <div class="language-switch">
+                <span class="active-lang">EN</span>
+                <span>/</span>
+                <span>NP</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
